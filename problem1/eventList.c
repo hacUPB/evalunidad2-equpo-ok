@@ -3,11 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#ifdef DOLOG
-#define LOG(...) fprintf(log,__VA_ARGS__);
-#else
-#define LOG(...) 
-#endif
 
 EventList *CreateEventList(void)
 {
